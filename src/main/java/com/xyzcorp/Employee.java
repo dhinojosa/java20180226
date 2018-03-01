@@ -5,10 +5,20 @@ import java.util.Objects;
 public class Employee {
     private String lastName;
     private String firstName;
+    private String ssn;
+
+    public Employee() {
+    }
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public Employee(String firstName, String lastName, String ssn) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
     }
 
     public String getLastName() {
@@ -49,4 +59,6 @@ public class Employee {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    public String getSSN() { return ssn; }
 }
